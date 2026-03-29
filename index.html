@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="M.png">
+    <title>Maham Ashraf | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Maham Ashraf, BSIT student and aspiring frontend web developer based in Faisalabad.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahamashraf.com/">
+    <meta property="og:title" content="Maham Ashraf | Portfolio">
+    <meta property="og:description" content="BSIT Student & Frontend Web Developer portfolio of Maham Ashraf.">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+        <div class="nav-content">
+            <a href="#home" class="logo">MA<span>.</span></a>
+            <div class="nav-right">
+                <ul class="nav-links" id="primary-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu"
+                    aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                    <span class="nav-toggle-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-container container">
+            <div class="hero-text-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Maham Ashraf</h1>
+                <h2 class="role">BSIT Student & Frontend Web Developer</h2>
+                <p class="tagline">I am a BSIT student focused on building practical web development 
+                    skills. I enjoy creating clean, responsive websites using HTML, CSS, and JavaScript,
+                     and I am continuously improving my problem-solving abilities through real projects.</p>
+                <a href="#about" class="btn primary-btn btn-animate">Discover More</a>
+            </div>
+            <div class="hero-image reveal">
+                <div class="image-wrapper">
+                    <img src="Maham Ashraf.jpg" alt="Maham Ashraf" id="profile-pic">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text glass-card reveal">
+                        <h3>Career Objective</h3>
+                        <p>BSIT student eager to begin a career in the IT field, utilizing technical knowledge,
+                            problem-solving abilities, and a strong learning mindset to contribute effectively to a
+                            dynamic organization while continuously developing professional skills.</p>
+                    </div>
+                    <div class="contact-info glass-card reveal" style="transition-delay: 0.2s">
+                        <h3>Personal Details</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> <span>Faisalabad, Pakistan</span></li>
+                            <li><i class="fas fa-envelope"></i> <a
+                                    href="mailto:mahamashrafgill9@gmail.com">mahamashrafgill9@gmail.com</a></li>
+                            <!-- <li><i class="fas fa-phone"></i> <a href="tel:+923247278433">03247278433</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 – 2022</div>
+                        <h3 class="timeline-title">Matric with Science</h3>
+                        <h4 class="timeline-subtitle">Govt Girls High School</h4>
+                    </div>
+                    <div class="timeline-item glass-card reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 – 2024</div>
+                        <h3 class="timeline-title">ICS (Intermediate in Computer Science)</h3>
+                        <h4 class="timeline-subtitle">Muhammad Hussain International College of Science</h4>
+                    </div>
+                    <div class="timeline-item glass-card reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 –  (In Progress)</div>
+                        <h3 class="timeline-title">Bachelor of Science in Information Technology (BSIT)</h3>
+                        <h4 class="timeline-subtitle">Superior University, Faisalabad, Pakistan</h4>
+                        <p class="timeline-detail"><strong>CGPA:</strong> 3.79</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience & Projects</h2>
+                <div class="cards-grid">
+
+                    <div class="card glass-card reveal" style="transition-delay: 0.1s">
+                        <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Code Crusade</h3>
+                        <span class="badge">Completed</span>
+                        <h4 class="subtitle">Console-based Game</h4>
+                        <p><strong>Skills Learned:</strong> C++ fundamentals, problem-solving, game logic, debugging.
+                        </p>
+                    </div>
+                    <div class="card glass-card reveal" style="transition-delay: 0.2s">
+                        <div class="card-icon"><i class="fas fa-store"></i></div>
+                        <h3>E-Commerce Mini Store</h3>
+                        <span class="badge">Completed</span>
+                        <h4 class="subtitle">OOP Project</h4>
+                        <p><strong>Skills Learned:</strong> Object-Oriented Programming (OOP), class design, inventory
+                            management, basic store functionality.</p>
+                    </div>
+                    <div class="card glass-card reveal" style="transition-delay: 0.3s">
+                        <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
+                        <h3>Cryptic Connect</h3>
+                        <span class="badge">Completed</span>
+                        <h4 class="subtitle">Secret Chat Simulator</h4>
+                        <p><strong>Skills Learned:</strong> Data Structures & Algorithms (DSA), secure communication
+                            logic, algorithm optimization, handling user input.</p>
+                    </div>
+                    <div class="card glass-card reveal">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Development Project</h3>
+                        <span class="badge">In Progress</span>
+                        <h4 class="subtitle">University Transport Automation Portal | Project-Based Learning</h4>
+                        <p>Engaged in project-based learning to develop practical web development skills. Developing
+                            responsive websites using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="card glass-card reveal" style="transition-delay: 0.4s">
+                        <div class="card-icon"><i class="fas fa-newspaper"></i></div>
+                        <h3>BlogSphere</h3>
+                        <span class="badge">Completed</span>
+                        <h4 class="subtitle">Personal Blogging Platform</h4>
+                        <p>Developed a responsive blog website where users can read and explore blog posts. Focused on
+                            clean UI design, responsive layout, and user-friendly experience using HTML, CSS, and
+                            JavaScript.</p>
+                        <p><strong>Skills Learned:</strong> Frontend Development, Responsive Design, UI/UX Basics.</p>
+                    </div>
+                    <div class="card glass-card reveal" style="transition-delay: 0.5s">
+                        <div class="card-icon"><i class="fas fa-microphone"></i></div>
+                        <h3>Voice Notes App</h3>
+                        <span class="badge">Completed</span>
+                        <h4 class="subtitle">Interactive Voice Recording Application</h4>
+                        <p>Developed a voice notes application allowing users to record, save, and play audio notes.
+                            Focused on implementing core functionality and improving user interaction using JavaScript.</p>
+                        <p><strong>Skills Learned:</strong> JavaScript functionality, handling user input, basic audio
+                            processing, UI interaction.</p>
+                    </div>
+                    <div class="card glass-card reveal" style="transition-delay: 0.6s">
+                        <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Resume Builder Web Application</h3>
+                        <span class="badge">Completed</span>
+                        <h4 class="subtitle">Dynamic Resume Generation Tool</h4>
+                        <p>Built a web-based resume builder that allows users to input their details and generate a
+                            structured resume. Focused on form handling, dynamic content rendering, and clean UI design
+                            using HTML, CSS, and JavaScript.</p>
+                        <p><strong>Skills Learned:</strong> Form handling &amp; validation, JavaScript DOM manipulation,
+                            UI/UX design, dynamic content generation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card reveal">
+                        <h3>Web Development & Design</h3>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tag"><i class="fab fa-js"></i> JavaScript (Learning)</span>
+                            <span class="tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                            <span class="tag"><i class="fas fa-paint-brush"></i> UI/UX Fundamentals</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card reveal" style="transition-delay: 0.2s">
+                        <h3>Programming & Databases</h3>
+                        <div class="skill-tags">
+                            <span class="tag"><i class="fas fa-code"></i> C / C++</span>
+                            <span class="tag"><i class="fas fa-database"></i> MySQL Basics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Certifications Section -->
+        <section id="awards" class="section">
+            <div class="container">
+                <h2 class="section-title">Honors & Awards</h2>
+                <div class="cards-grid">
+                    <div class="card glass-card reveal highlight">
+                        <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                        <h3>Top Performer & Highest CGPA</h3>
+                        <h4 class="subtitle">Honhar Scholarship Recipient</h4>
+                        <span class="badge highlight-badge">100% Fee Waiver</span>
+                        <p>Awarded for outstanding academic performance and excellence in the BSIT program. Recognized
+                            among the top students in Punjab with a merit-based scholarship covering full tuition for
+                            the entire duration of the degree.</p>
+                    </div>
+                    <div class="card glass-card reveal" style="transition-delay: 0.1s">
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>Certificate of Appreciation</h3>
+                        <h4 class="subtitle">Open House Event</h4>
+                        <p>Recognized for active participation and contribution during the university open house.</p>
+                    </div>
+                    
+                    <div class="card glass-card reveal" style="transition-delay: 0.3s">
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>Claude 101 Certificate</h3>
+                        <h4 class="subtitle">Issued by Anthropic</h4>
+                        <p>Completed Claude 101 course, gaining foundational understanding of AI tools and prompt
+                            engineering. Learned how to effectively interact with AI systems and apply them in practical
+                            scenarios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="glass-card reveal">
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="5" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-logo">Maham Ashraf<span>.</span></h2>
+            <div class="footer-cta reveal">
+                <p>Let's build something together!</p>
+            </div>
+            <div class="social-links justify-center">
+                <a href="https://www.linkedin.com/in/maham-ashraf-22a641380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/maham-ashraf" class="social-btn" aria-label="GitHub" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Maham Ashraf. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
