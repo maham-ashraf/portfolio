@@ -1329,11 +1329,16 @@ body.light-mode .copyright {
     .contact-form {
         gap: 1.75rem;
         margin: 0 0.5rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     .form-grid {
         grid-template-columns: 1fr;
         gap: 1.25rem;
+        width: 100%;
     }
 
     .form-group {
@@ -1350,8 +1355,9 @@ body.light-mode .copyright {
         font-size: 16px;
         min-height: 52px;
         padding: 1rem;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.08);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
@@ -1577,12 +1583,24 @@ body.light-mode .copyright {
     .contact-form {
         margin: 0 0.25rem;
         gap: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
     }
 
     .form-group input,
     .form-group textarea {
         min-height: 48px;
         padding: 0.9rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .form-group textarea {
@@ -2080,12 +2098,16 @@ body.light-mode .copyright {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .form-group {
@@ -2108,6 +2130,9 @@ body.light-mode .copyright {
     color: var(--text-main);
     font-family: var(--font-body);
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .form-group input:focus, .form-group textarea:focus {
